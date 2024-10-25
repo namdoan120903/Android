@@ -2,39 +2,19 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:padding="16dp">
-
-    <EditText
-        android:id="@+id/editTextAmount"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/textViewTitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Số tiền nguồn"
-        android:inputType="numberDecimal"
-        android:layout_weight="1" />
-
-    <Spinner
-        android:id="@+id/spinnerFromCurrency"
+        android:padding="16dp"
+        android:text="Inbox"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:background="#FFDD33" />
+    <ListView
+        android:id="@+id/listViewEmails"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"/>
-    <EditText
-        android:id="@+id/editTextResult"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Kết quả"
-        android:inputType="none"
-        android:focusable="false"
-        android:layout_weight="1"/>
-
-    <Spinner
-        android:id="@+id/spinnerToCurrency"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"/>
-    <View
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_weight="5"/>
-
+        android:layout_height="match_parent" />
 </LinearLayout>
